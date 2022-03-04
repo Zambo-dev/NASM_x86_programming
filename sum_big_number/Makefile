@@ -36,4 +36,7 @@ $(ASM_OBJ) : $(ASM_FILE)
 
 exec : $(OUTFILE)
 	@ echo ""
-	@ ./$^	
+	@ ./$^
+
+clean:
+	rm test
