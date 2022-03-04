@@ -1,1 +1,4 @@
 exec/
+*.o
+*.elf
+test
