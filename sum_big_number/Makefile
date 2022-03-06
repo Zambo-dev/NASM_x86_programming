@@ -39,4 +39,4 @@ exec : $(OUTFILE)
 	@ ./$^
 
 clean:
-	rm test
+	rm test ./*.o
