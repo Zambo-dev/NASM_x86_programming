@@ -85,7 +85,7 @@ sum:
 		cmp	ecx, 0
 		jne	loop
 	
-	skip:
+	
 	add	esi, 12			; Delete space of tmp_carry and carry
 	
 	; Pop the preserved registers

@@ -1,5 +1,4 @@
 # Compiler settings
-#
 ASM_COMPILER = nasm
 C_COMPILER = gcc
 ASM_FLAGS = -f elf32
@@ -13,13 +12,11 @@ ASM_FILE := $(wildcard *.asm)
 ASM_OBJ = $(ASM_FILE:.asm=.o)
 OUTFILE = test
 
-
 # Compilation and execution
-
 all : compile exec
 
 compile : $(C_OBJ) $(ASM_OBJ)
-	@ echo -n "Compiling $(C_OBJ) $(ASM_OBJ): " 
+	@ echo -n "Linking $(C_OBJ) $(ASM_OBJ): " 
 	@ $(C_COMPILER) $(C_FLAGS) $^ -o $(OUTFILE) $(DEBUG_FLAGS)
 	@ printf "\033[32mdone\033[0m\n"
 	@ rm *.o 

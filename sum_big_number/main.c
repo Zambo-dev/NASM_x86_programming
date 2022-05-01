@@ -13,17 +13,17 @@ int main()
 {
 	srand(time(NULL));
 
-	byte* val = calloc(SIZE, sizeof(byte));
-	byte* val2 = calloc(SIZE, sizeof(byte));
+	byte val[SIZE] = {0};
+	byte val2[SIZE] = {0};
 	
 	val2[SIZE-1] = 100;
 
-	for(int i=0; i < 100000; i++)
+	for(int i=0; i < 1000000; i++)	
 		sum(val, val2, SIZE);	
 	
 	printf("Val: ");
-	for(int i=0; i < SIZE; i++)
-		printf("%u ", val[i]);
+	for(int i=0; i < SIZE; i++)		// Result: 0 0 0 0 5 F5 E1 0
+		printf("%X ", val[i]);
 	printf("\n");
 	
 	return 0;
