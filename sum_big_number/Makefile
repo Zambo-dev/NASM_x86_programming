@@ -3,7 +3,7 @@ ASM_COMPILER = nasm
 C_COMPILER = gcc
 ASM_FLAGS = -f elf32
 C_FLAGS = -m32
-DEBUG_FLAGS = -g -F stabs
+DEBUG_FLAGS = -g
 
 # Files
 C_FILE := $(wildcard *.c)

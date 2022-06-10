@@ -1,7 +1,5 @@
 ; This function is based on big-endian numbers, so it start computing using the first byte
 ; from the right
-; It will be optimized and then used in the project Zambo-dev/big-number-toolbox-library to
-; archive better performance
 
 	section .text
 	global sum
